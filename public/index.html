@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator client App</title>
+
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="mb-4">Calculator</h2>
+
+      <!-- Start Form -->
+      <form>
+        <div class="form-group mb-4">
+          <label for="inputA">Number 1: </label>
+
+          <!-- input field: inputA -->
+          <input id="inputA" type="number" step="any" class="form-control" placeholder="Enter a number">
+        </div>
+        <div class="form-group mb-4">
+          <label for="inputB">Number 2:</label>
+
+          <!-- input field: inputB -->
+          <input id="inputB" type="number" step="any" class="form-control" placeholder="Enter a number">
+        </div>
+
+        <!-- Calculator Buttons -->
+        <div class="form-group mb-4">
+          <button id="btnAdd" type="button" class="btn btn-primary"><span class="bi bi-calculator"></span>Add</button>
+          <button id="btnSubtract" type="button" class="btn btn-primary"><span class="bi bi-calculator"></span>Subtract</button>
+          <button id="btnMultiply" type="button" class="btn btn-primary"><span class="bi bi-calculator"></span>Multiply</button>
+          <button id="btnDivide" type="button" class="btn btn-primary"><span class="bi bi-calculator"></span>Divide</button>
+        </div>
+      </form>
+      <!-- End Form -->
+      <label>Answer:</label>
+      <div class="well pb-4 answer" id="answer">numA + numB = answer</div>
+    </div>
+
+    <!-- Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    
+    <!-- Site CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Site JavaScript loaded as a Module -->
+    <script src="./src/index.js" type="module"></script>
+  </body>
+</html>
